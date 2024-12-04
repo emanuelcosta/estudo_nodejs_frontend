@@ -23,46 +23,44 @@
                         <li>Para solicitar mais revistas clique no link <a href="#">Enviar outra resposta</a>.</li>
                     </ol>
                 </div>
-                <form>
+                <form id="formPedido">
                     <div class="mb-3">
-                        <label for="nome" class="form-label"><strong>Nome</strong></label>
-                        <input type="text" id="nome" class="form-control" placeholder="Sua resposta" required>
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" id="nome" class="form-control" placeholder="Digite seu nome" required>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label"><strong>Qual revista deseja?</strong></label>
-                        <p class="mb-2">Revista Aluno: R$ 10,00</p>
-                        <p class="mb-2">Revista Professor: R$ 15,00</p>
-                        <div class="form-check">
-                            <input type="radio" id="adultos-aluno" name="revista" class="form-check-input" required>
-                            <label for="adultos-aluno" class="form-check-label">Adultos/Aluno</label>
+                        <label class="form-label">Classe</label>
+                        <div>
+                            <input type="radio" id="adultos" name="classe" value="Adultos" required>
+                            <label for="adultos">Adultos</label>
                         </div>
-                        <div class="form-check">
-                            <input type="radio" id="adultos-professor" name="revista" class="form-check-input" required>
-                            <label for="adultos-professor" class="form-check-label">Adultos/Professor</label>
+                        <div>
+                            <input type="radio" id="jovens" name="classe" value="Jovens" required>
+                            <label for="jovens">Jovens</label>
                         </div>
-                        <div class="form-check">
-                            <input type="radio" id="jovens-aluno" name="revista" class="form-check-input" required>
-                            <label for="jovens-aluno" class="form-check-label">Jovens/Aluno</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="radio" id="jovens-professor" name="revista" class="form-check-input" required>
-                            <label for="jovens-professor" class="form-check-label">Jovens/Professor</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="radio" id="criancas-aluno" name="revista" class="form-check-input" required>
-                            <label for="criancas-aluno" class="form-check-label">Crianças/Aluno</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="radio" id="criancas-professor" name="revista" class="form-check-input" required>
-                            <label for="criancas-professor" class="form-check-label">Crianças/Professor</label>
+                        <div>
+                            <input type="radio" id="criancas" name="classe" value="Crianças" required>
+                            <label for="criancas">Crianças</label>
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="quantidade" class="form-label"><strong>Quantos revistas?</strong></label>
-                        <input type="number" id="quantidade" class="form-control" placeholder="Sua resposta" min="1" required>
+                        <label class="form-label">Tipo de Revista</label>
+                        <div>
+                            <input type="radio" id="aluno" name="tipoRevista" value="Aluno" required>
+                            <label for="aluno">Aluno</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="professor" name="tipoRevista" value="Professor" required>
+                            <label for="professor">Professor</label>
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <div class="mb-3">
+                        <label for="quantidade" class="form-label">Quantidade</label>
+                        <input type="number" id="quantidade" class="form-control" placeholder="Digite a quantidade" min="1" required>
+                    </div>
+                    <button type="button" id="saveButton" class="btn btn-primary">Salvar</button>
                 </form>
+                
             </div>
         </div>
     </div>
