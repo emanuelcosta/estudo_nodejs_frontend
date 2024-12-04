@@ -1,97 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulário Simples - Google Forms Estilo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: #f9f9f9;
-      font-family: Arial, sans-serif;
-    }
-    .container {
-      max-width: 600px;
-      padding: 30px;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      margin-top: 50px;
-    }
-    .form-header {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-    .form-subheader {
-      font-size: 16px;
-      color: #555;
-      margin-bottom: 20px;
-    }
-    .form-group {
-      margin-bottom: 20px;
-    }
-    .form-footer {
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Revistas - 1º Trimestre 2025</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
-  <div class="container">
-    <h2 class="form-header">Formulário de Feedback</h2>
-    <p class="form-subheader">Por favor, preencha o formulário abaixo para nos ajudar a melhorar.</p>
-
-    <form>
-      <!-- Nome -->
-      <div class="form-group">
-        <label for="nome">Qual é o seu nome?</label>
-        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
-      </div>
-
-      <!-- E-mail -->
-      <div class="form-group">
-        <label for="email">Qual é o seu e-mail?</label>
-        <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
-      </div>
-
-      <!-- Pergunta de Múltipla Escolha -->
-      <div class="form-group">
-        <label for="satisfacao">Como você avalia nosso serviço?</label>
-        <select class="form-control" id="satisfacao" required>
-          <option value="excelente">Excelente</option>
-          <option value="bom">Bom</option>
-          <option value="regular">Regular</option>
-          <option value="ruim">Ruim</option>
-        </select>
-      </div>
-
-      <!-- Pergunta de Múltipla Escolha (Checkbox) -->
-      <div class="form-group">
-        <label>Você recomendaria nossos serviços?</label><br>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="recomendacao" id="sim" value="sim" required>
-          <label class="form-check-label" for="sim">Sim</label>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5 class="card-title mb-0">Pedido de revistas 1º TRIMESTRE 2025</h5>
+            </div>
+            <div class="card-body">
+                <p class="mb-1">Formulário de solicitação de revista de escola bíblica para o 1º TRIMESTRE de 2025.</p>
+                <p class="mb-1"><strong>Período de solicitação até 10/12</strong></p>
+                <p><strong>Pagamento até dia 30/12</strong></p>
+                <div class="alert alert-warning" role="alert">
+                    <p class="mb-1">Atenção!</p>
+                    <ol class="mb-0">
+                        <li>O formulário é para pedido de um tipo de revista.</li>
+                        <li>Para solicitar mais revistas clique no link <a href="#">Enviar outra resposta</a>.</li>
+                    </ol>
+                </div>
+                <form>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label"><strong>Nome</strong></label>
+                        <input type="text" id="nome" class="form-control" placeholder="Sua resposta" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label"><strong>Qual revista deseja?</strong></label>
+                        <p class="mb-2">Revista Aluno: R$ 10,00</p>
+                        <p class="mb-2">Revista Professor: R$ 15,00</p>
+                        <div class="form-check">
+                            <input type="radio" id="adultos-aluno" name="revista" class="form-check-input" required>
+                            <label for="adultos-aluno" class="form-check-label">Adultos/Aluno</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" id="adultos-professor" name="revista" class="form-check-input" required>
+                            <label for="adultos-professor" class="form-check-label">Adultos/Professor</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" id="jovens-aluno" name="revista" class="form-check-input" required>
+                            <label for="jovens-aluno" class="form-check-label">Jovens/Aluno</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" id="jovens-professor" name="revista" class="form-check-input" required>
+                            <label for="jovens-professor" class="form-check-label">Jovens/Professor</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" id="criancas-aluno" name="revista" class="form-check-input" required>
+                            <label for="criancas-aluno" class="form-check-label">Crianças/Aluno</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" id="criancas-professor" name="revista" class="form-check-input" required>
+                            <label for="criancas-professor" class="form-check-label">Crianças/Professor</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="quantidade" class="form-label"><strong>Quantos revistas?</strong></label>
+                        <input type="number" id="quantidade" class="form-control" placeholder="Sua resposta" min="1" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
         </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="recomendacao" id="nao" value="nao">
-          <label class="form-check-label" for="nao">Não</label>
-        </div>
-      </div>
-
-      <!-- Comentários -->
-      <div class="form-group">
-        <label for="comentarios">Deixe um comentário (opcional):</label>
-        <textarea class="form-control" id="comentarios" rows="4" placeholder="Escreva seu comentário aqui..."></textarea>
-      </div>
-
-      <!-- Botão de Enviar -->
-      <div class="form-footer">
-        <button type="submit" class="btn btn-primary">Enviar</button>
-      </div>
-    </form>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
