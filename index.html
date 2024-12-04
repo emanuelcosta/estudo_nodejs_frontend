@@ -13,58 +13,40 @@
         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cadastroModal">Cadastrar Membro</button>
     </div>
 
-    <!-- Modal de Cadastro / Edição -->
-    <div class="modal fade" id="cadastroModal" tabindex="-1" aria-labelledby="cadastroModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="cadastroModalLabel">Cadastrar Membro</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- Formulário de Cadastro / Edição -->
-                    <form id="membroForm">
-                        <div class="mb-3">
-                            <label for="nome" class="form-label">Nome</label>
-                            <input type="text" class="form-control" id="nome" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="dataNascimento" class="form-label">Data de Nascimento</label>
-                            <input type="date" class="form-control" id="dataNascimento" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="numeroRol" class="form-label">Número de Rol</label>
-                            <input type="text" class="form-control" id="numeroRol" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="estadoCivil" class="form-label">Estado Civil</label>
-                            <select class="form-select" id="estadoCivil" required>
-                                <option value="Solteiro">Solteiro</option>
-                                <option value="Casado">Casado</option>
-                                <option value="Divorciado">Divorciado</option>
-                                <option value="Viúvo">Viúvo</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="naturalidade" class="form-label">Naturalidade</label>
-                            <input type="text" class="form-control" id="naturalidade" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="situacao" class="form-label">Situação</label>
-                            <select class="form-select" id="situacao" required>
-                                <option value="Ativo">Ativo</option>
-                                <option value="Inativo">Inativo</option>
-                            </select>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-primary" id="saveButton">Salvar</button>
-                </div>
-            </div>
+    <form id="membroForm">
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" required>
         </div>
-    </div>
+        <div class="mb-3">
+            <label for="dataNascimento" class="form-label">Data de Nascimento</label>
+            <input type="date" class="form-control" id="dataNascimento" required>
+        </div>
+        <div class="mb-3">
+            <label for="numeroRol" class="form-label">Número de Rol</label>
+            <input type="text" class="form-control" id="numeroRol" required>
+        </div>
+        <div class="mb-3">
+            <label for="estadoCivil" class="form-label">Estado Civil</label>
+            <select class="form-select" id="estadoCivil" required>
+                <option value="Solteiro">Solteiro</option>
+                <option value="Casado">Casado</option>
+                <option value="Divorciado">Divorciado</option>
+                <option value="Viúvo">Viúvo</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="naturalidade" class="form-label">Naturalidade</label>
+            <input type="text" class="form-control" id="naturalidade" required>
+        </div>
+        <div class="mb-3">
+            <label for="situacao" class="form-label">Situação</label>
+            <select class="form-select" id="situacao" required>
+                <option value="Ativo">Ativo</option>
+                <option value="Inativo">Inativo</option>
+            </select>
+        </div>
+    </form>
 
     <!-- Modal de Confirmação de Exclusão -->
     <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
